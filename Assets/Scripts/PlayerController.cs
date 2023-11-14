@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
 
     //ref Command rcmd = ref cmdNothing;
 
-    Command _last_command = null;
+    // Command _last_command = null;
 
     // Stacks to store the commands
     Stack<Command> _undo_commands = new Stack<Command>();
@@ -66,7 +66,6 @@ public class PlayerController : MonoBehaviour
     {
         _rigidbody = GetComponent<Rigidbody>();
         _start_pos = transform.position;
-
     }
 
     IEnumerator Replay()
@@ -179,4 +178,5 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+
 }
